@@ -5,11 +5,13 @@ public class Pigeon extends Bird {
         super(name, color);
     }
 
-    public void eatPizza() {
-        System.out.println("Only the Pigeon can EatPizza.");
+    @Override
+    public void speak() {
+        System.out.println("Yo! I'm " + name + " and I'm a " + color + " pigeon.");
     }
 
-    public void sleep() {
-        System.out.println("I'm a sleeping pigeon");
+    public void eatPizza() {
+        System.out.println("Delicious pizza!");
     }
+
 }
